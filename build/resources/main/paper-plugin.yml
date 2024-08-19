@@ -1,0 +1,4 @@
+name: piglinTrades
+version: '1.0-SNAPSHOT'
+main: org.piglinManager.piglinTrades.PiglinTrades
+api-version: '1.21'

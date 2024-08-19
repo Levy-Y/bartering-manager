@@ -1,0 +1,21 @@
+enabled: true # should these trades be registered
+log: true # debug mode (DEV ONLY)
+
+trades:
+  vanilla_trades: # vanilla trades here
+    - stone_sword: # vanilla item ID, not case sensitive
+        amount: 1 # amount to drop
+        chance: 50 # chance in %
+    - iron_sword:
+        amount: 1
+        chance: 30
+    - diamond_sword:
+        amount: 1
+        chance: 10
+  oraxen_trades: # oraxen trades here
+    - rubyore: # oraxen item ID
+        amount: 3 # amount to drop
+        chance: 10 # chance in %
+    - silverore:
+        amount: 3
+        chance: 10
