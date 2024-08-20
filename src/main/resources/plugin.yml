@@ -1,0 +1,10 @@
+name: piglinTrades
+version: '1.0-BETA'
+main: org.piglinManager.piglinTrades.PiglinTrades
+api-version: '1.21'
+
+commands:
+  piglinreload:
+    description: Reloads the Piglin trades configuration.
+    usage: /<command>
+    permission: piglinTrades.reload
