@@ -10,7 +10,7 @@ Define custom items and their drop chances for Piglin bartering.
 - Supports for different items: <br>
 Add both vanilla and Oraxen items to the Piglin trade table.
 
-### <b style=color:red;>Disclaimer</b>
+<b style=color:red;>Disclaimer</b>
 - The plugin doesn't add the items to the piglin trades, it replaces them (the vanilla ones), if you want the vanilla trades aswell, you have to add them manually <br>
 `This will be fixed in a future version!`
 
