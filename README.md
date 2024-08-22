@@ -73,6 +73,14 @@ trades:
     - silverore:
         amount: 3
         chance: 10
+   mmoitems_trades: # mmoitems trades
+     - SWORD: # mmoitems category name
+         item: "TESTSWORD" # mmoitems item ID
+         chance: 50 # chance in %
+     - AXE:
+         item: "AXETEST"
+         chance: 50
+
 ```
 
 ### Configuration Parameters
@@ -93,6 +101,14 @@ trades:
         Item ID: The ID of the Oraxen item.
         amount: The number of items to drop.
         chance: The percentage chance of this item being selected during a Piglin barter.
+
+###
+
+    mmoitems_trades: Define trades for MMOItems
+       - CATEGORY_NAME: Category of the item, ex.: SWORD, ARMOR 
+         item: "ITEM_NAME" name of the item (case sensitive)
+         chance: The percentage chance of this item being selected during a Piglin barter.
+
 
 ## Usage
 
