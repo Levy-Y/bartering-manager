@@ -25,8 +25,16 @@ public class TradeItems {
             if (randomWeight < 0) {
                 return entry.getKey();
             }
+
+            //if (randomWeight < 0 && entry.getKey() != null) {
+            //    return entry.getKey();
+            //}
         }
 
         return null;
+    }
+
+    public void emptyTradeItemCache() {
+        items = new HashMap<>();
     }
 }

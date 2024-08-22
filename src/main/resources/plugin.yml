@@ -2,6 +2,10 @@ name: piglinTrades
 version: '1.0-BETA'
 main: org.piglinManager.piglinTrades.PiglinTrades
 api-version: '1.21'
+softdepend:
+  - Oraxen
+  - MMOItems
+  - ItemsAdder
 
 commands:
   piglinreload:

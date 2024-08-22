@@ -36,6 +36,10 @@ public final class PiglinTrades extends JavaPlugin implements Listener {
             return;
         }
 
+        if (trades.items.isEmpty()) {
+            return;
+        }
+
         Entity entity = event.getEntity();
         if (entity instanceof Piglin piglin) {
             event.getItemDrop().setItemStack(Objects.requireNonNull(TradeItems.selectItem(trades.items)));
