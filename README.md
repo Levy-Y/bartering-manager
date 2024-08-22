@@ -6,6 +6,8 @@
 
 ## Overview
 
+[![Gradle Build](https://github.com/Levy-Y/bartering-manager/actions/workflows/gradle.yml/badge.svg)](https://github.com/Levy-Y/bartering-manager/actions/workflows/gradle.yml) [![Dependency Submission](https://github.com/Levy-Y/bartering-manager/actions/workflows/gradle.yml/badge.svg)](https://github.com/Levy-Y/bartering-manager/actions/workflows/gradle.yml)
+
 The Piglin Trade Manager plugin is a Spigot Minecraft plugin that allows server administrators to manage and customize the bartering system for Piglins. With this plugin, you can define custom trade items and probabilities for both vanilla and Oraxen items, providing enhanced control over Piglin interactions.
 
 ## Features
