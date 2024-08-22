@@ -1,4 +1,8 @@
-[[./logo.png]]
+<h1 align="center">
+  <br>
+  <a href="/"><img src="logo.png" alt="..." width="900"></a>
+  <br>
+</h1>
 
 ## Overview
 
