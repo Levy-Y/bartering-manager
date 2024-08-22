@@ -117,6 +117,10 @@ If using Oraxen items, ensure that Oraxen is properly installed on the server.
 ### Note for troubleshooting:
 These are just basic solutions, if none of the above can solve your problem, open a ticket here on [Github](https://github.com/Levy-Y/bartering-manager/issues)
 
+## Trello
+
+We have a trello board, where we keep all the tasks, and requests for future versions. If you are interested check it out [here](https://trello.com/b/AdUkr5wt/trademanager)
+
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
