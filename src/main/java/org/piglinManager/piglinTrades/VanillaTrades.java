@@ -19,7 +19,8 @@ public class VanillaTrades {
         ItemStack enchanted_book = new ItemStack(Material.ENCHANTED_BOOK);
         EnchantmentStorageMeta enchantmentStorageMeta = (EnchantmentStorageMeta) enchanted_book.getItemMeta();
         enchantmentStorageMeta.addStoredEnchant(Enchantment.SOUL_SPEED,
-                random.nextInt(1, 4), true);
+                random.nextInt(1, 4), false);
+        enchanted_book.setItemMeta(enchantmentStorageMeta);
         trades.items.put(enchanted_book,
                 new ItemData(1, 1, 1));
 
