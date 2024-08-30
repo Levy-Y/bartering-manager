@@ -2,6 +2,7 @@ enabled: true # should these trades be registered
 log: true # should the plugin log
 override_vanilla: false # should it override the vanilla trades with the custom ones
 
+# If override_vanilla is true and no custom trade is defined, the plugin will use the vanilla trades either way!
 # The following is just an example!
 
 # trades:

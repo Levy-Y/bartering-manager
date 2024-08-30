@@ -24,8 +24,14 @@ public class TradeItems {
             randomWeight -= entry.getValue().chance();
             if (randomWeight < 0 && entry.getKey() != null) {
                 ItemStack item = entry.getKey();
-                int amount = random.nextInt(entry.getValue().min_value(), entry.getValue().max_value());
-                item.setAmount(amount);
+                int min_value = entry.getValue().min_value();
+                int max_value = entry.getValue().max_value();
+
+                if (min_value > 0 && min_value < max_value ) {
+                    item.setAmount(random.nextInt(min_value, max_value + 1));
+                } else {
+                    item.setAmount(1);
+                }
 
                 return item;
             }

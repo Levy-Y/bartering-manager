@@ -1,5 +1,5 @@
 name: piglinTrades
-version: '1.0-BETA'
+version: '1.3-BETA'
 main: org.piglinManager.piglinTrades.PiglinTrades
 api-version: '1.21'
 softdepend:

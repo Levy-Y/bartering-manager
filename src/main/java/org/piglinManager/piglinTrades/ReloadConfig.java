@@ -40,6 +40,7 @@ public class ReloadConfig {
 
         if (!override_vanilla) {
             VanillaTrades.addVanillaTrades(trades);
+            plugin.getLogger().info("Vanilla trades are being imported!");
         }
 
         ConfigurationSection tradesSection = plugin.getConfig().getConfigurationSection("trades");

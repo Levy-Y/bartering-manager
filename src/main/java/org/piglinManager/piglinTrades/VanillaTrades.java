@@ -3,6 +3,8 @@ package org.piglinManager.piglinTrades;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.BookMeta;
+import org.bukkit.inventory.meta.EnchantmentStorageMeta;
 import org.bukkit.inventory.meta.PotionMeta;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
@@ -15,20 +17,24 @@ public class VanillaTrades {
     public static void addVanillaTrades(TradeItems trades) {
         // Enchanted Book with Soul Speed
         ItemStack enchanted_book = new ItemStack(Material.ENCHANTED_BOOK);
-        enchanted_book.addEnchantment(Enchantment.SOUL_SPEED, random.nextInt(3));
+        EnchantmentStorageMeta enchantmentStorageMeta = (EnchantmentStorageMeta) enchanted_book.getItemMeta();
+        enchantmentStorageMeta.addStoredEnchant(Enchantment.SOUL_SPEED,
+                random.nextInt(1, 4), true);
         trades.items.put(enchanted_book,
                 new ItemData(1, 1, 1));
 
         // Iron Boots with Soul Speed
         ItemStack iron_boots = new ItemStack(Material.IRON_BOOTS);
-        iron_boots.addEnchantment(Enchantment.SOUL_SPEED, random.nextInt(3));
+        iron_boots.addEnchantment(Enchantment.SOUL_SPEED,
+                random.nextInt(1, 4));
         trades.items.put(iron_boots,
                 new ItemData(2, 1, 1));
 
         // Splash Potion of Fire Resistance
         ItemStack splash_potion = new ItemStack(Material.SPLASH_POTION);
         PotionMeta splash_meta = (PotionMeta) splash_potion.getItemMeta();
-        PotionEffect splash_effect = new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 1800, 1, true, true, true);
+        PotionEffect splash_effect = new PotionEffect(
+                PotionEffectType.FIRE_RESISTANCE, 1800, 1, true, true, true);
         splash_meta.addCustomEffect(splash_effect, true);
         splash_potion.setItemMeta(splash_meta);
         trades.items.put(splash_potion, new ItemData(2, 1, 1));
@@ -36,7 +42,8 @@ public class VanillaTrades {
         // Potion of Fire Resistance
         ItemStack potion_of_fire_resistance = new ItemStack(Material.POTION);
         PotionMeta meta = (PotionMeta) potion_of_fire_resistance.getItemMeta();
-        PotionEffect effect = new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 1800, 1, true, true, true);
+        PotionEffect effect = new PotionEffect(
+                PotionEffectType.FIRE_RESISTANCE, 1800, 1, true, true, true);
         meta.addCustomEffect(effect, true);
         potion_of_fire_resistance.setItemMeta(meta);
         trades.items.put(potion_of_fire_resistance, new ItemData(2, 1, 1));

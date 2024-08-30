@@ -11,7 +11,6 @@ import java.util.Objects;
 public final class PiglinTrades extends JavaPlugin implements Listener {
     public static boolean is_enabled = true;
     public static boolean log = true;
-
     public static boolean override_vanilla = true;
 
     public static TradeItems trades = new TradeItems();
