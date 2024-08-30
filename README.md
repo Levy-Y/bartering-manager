@@ -99,6 +99,7 @@ trades:
 
 `enabled: (boolean)` Enable or disable the plugin's trade functionality. <br>
 `log: (boolean)` Toggle logging. Set to false if you don't want to see any info/warning from the plugin.
+`override_vanilla (boolean)` Enable or disable vanilla trades 
 
 ### Trades Section
 
