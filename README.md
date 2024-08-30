@@ -13,9 +13,9 @@ The Piglin Trade Manager plugin is a Spigot Minecraft plugin that allows server 
 ## Features
 
 - Customizable Trades: <br>
-Define custom items and their drop chances for Piglin bartering.
+Define custom items, their drop chances and the amount to drop, for Piglin bartering.
 - Supports for different items: <br>
-Add both vanilla and Oraxen items to the Piglin trade table.
+Add vanilla, MMOItems and Oraxen items to the Piglin trade table.
 
 <b style=color:red;>Disclaimer</b>
 - The plugin doesn't add the items to the piglin trades, it replaces them (the vanilla ones), if you want the vanilla trades aswell, you have to add them manually <br>
