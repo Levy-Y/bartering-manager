@@ -5,7 +5,7 @@ override_vanilla: false # should it override the vanilla trades with the custom 
 # If override_vanilla is true and no custom trade is defined, the plugin will use the vanilla trades either way!
 # The following is just an example!
 
-# trades:
+#trades:
 #   vanilla_trades: # vanilla trades here
 #     - stone_sword: # vanilla item ID, not case sensitive
 #         min_amount: 1 # minimum amount to drop
