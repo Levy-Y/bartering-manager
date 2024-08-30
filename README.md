@@ -56,31 +56,41 @@ The plugin uses a `config.yml` file for configuration. Below is a sample configu
 
 enabled: true # Should these trades be registered?
 log: true # Enable debug logging (for development)
+override_vanilla: false # should it override the vanilla trades with the custom ones
 
 trades:
-  vanilla_trades: # Define vanilla item trades here
-    - stone_sword: # Vanilla item ID (not case sensitive)
-        amount: 1 # Amount to drop
-        chance: 50 # Chance in % for this item to drop
-    - iron_sword:
-        amount: 1
-        chance: 30
-    - diamond_sword:
-        amount: 1
-        chance: 10
-  oraxen_trades: # Define Oraxen item trades here
-    - rubyore: # Oraxen item ID
-        amount: 3 # Amount to drop
-        chance: 10 # Chance in % for this item to drop
-    - silverore:
-        amount: 3
-        chance: 10
+   vanilla_trades: # vanilla trades here
+     - stone_sword: # vanilla item ID, not case sensitive
+         min_amount: 1 # minimum amount to drop
+         max_amount: 3 # maximum amount to drop
+         chance: 50 # chance in %
+     - iron_sword:
+         min_amount: 1
+         max_amount: 3
+         chance: 30
+     - diamond_sword:
+         min_amount: 1
+         max_amount: 3
+         chance: 10
+   oraxen_trades: # oraxen trades here
+     - obsidian_pickaxe: # oraxen item ID
+         min_amount: 1 # minimum amount to drop
+         max_amount: 3 # maximum amount to drop
+         chance: 10 # chance in %
+     - amethyst_hammer:
+         min_amount: 1
+         max_amount: 3
+         chance: 10
    mmoitems_trades: # mmoitems trades
      - SWORD: # mmoitems category name
          item: "TESTSWORD" # mmoitems item ID
+         min_amount: 1
+         max_amount: 1
          chance: 50 # chance in %
      - AXE:
          item: "AXETEST"
+         min_amount: 1
+         max_amount: 1
          chance: 50
 
 ```
@@ -94,20 +104,24 @@ trades:
 
     vanilla_trades: Define trades for vanilla Minecraft items.
         Item ID: The ID of the vanilla item.
-        amount: The number of items to drop.
+        min_amount: The minimum number of items to drop.
+        max_amount: The maximum number of items to drop.
         chance: The percentage chance of this item being selected during a Piglin barter.
         
 ###
 
     oraxen_trades: Define trades for Oraxen items.
         Item ID: The ID of the Oraxen item.
-        amount: The number of items to drop.
+        min_amount: The minimum number of items to drop.
+        max_amount: The maximum number of items to drop.
         chance: The percentage chance of this item being selected during a Piglin barter.
 
 ###
 
     mmoitems_trades: Define trades for MMOItems
        - CATEGORY_NAME: Category of the item, ex.: SWORD, ARMOR 
+         min_amount: The minimum number of items to drop.
+         max_amount: The maximum number of items to drop.
          item: "ITEM_NAME" name of the item (case sensitive)
          chance: The percentage chance of this item being selected during a Piglin barter.
 
